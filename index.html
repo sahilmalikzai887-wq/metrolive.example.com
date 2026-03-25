@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>METROLIVE RP | FiveM Roleplay Server</title>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Welcome Popup -->
+    <div id="welcomeModal" class="modal">
+        <div class="modal-card">
+            <button class="modal-close" id="closeModalBtn">&times;</button>
+            <div class="modal-icon">
+                <img src="https://r2.fivemanage.com/LTzCowpSGsQqAkmQrMwLF/Mar22202601_53_49AM.png" alt="MetroLive Logo">
+            </div>
+            <h2>Welcome to <span>MetroLife RP</span></h2>
+            <p>Your journey starts here. Join the best FiveM roleplay experience.</p>
+            <div class="modal-buttons">
+                <a href="https://discord.gg/zzBnbJQ3" target="_blank" class="modal-btn discord">Join Discord</a>
+                <a href="https://cfx.re/join/ok3dvx" target="_blank" class="modal-btn server">Join Server</a>
+            </div>
+            <div class="modal-timer">Closing in <span id="countdownTimer">5</span>s</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <img src="https://r2.fivemanage.com/LTzCowpSGsQqAkmQrMwLF/Mar22202601_53_49AM.png" alt="MetroLive">
+                <span>METROLIVE RP</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#staff">Staff</a></li>
+                <li><a href="#members">Members</a></li>
+                <li><a href="#connect">Connect</a></li>
+            </ul>
+            <button class="mobile-menu" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section with MetroLive Logo First -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="https://r2.fivemanage.com/LTzCowpSGsQqAkmQrMwLF/Mar22202601_53_49AM.png" alt="METROLIVE RP">
+            </div>
+            <h1>METROLIVE <span>RP</span></h1>
+            <p>Experience the ultimate FiveM roleplay. Free gangs, realistic jobs, VIP cars, and housing system.</p>
+            <div class="hero-buttons">
+                <a href="https://discord.gg/zzBnbJQ3" target="_blank" class="btn btn-primary">Join Discord</a>
+                <a href="https://cfx.re/join/ok3dvx" target="_blank" class="btn btn-secondary">Connect Now</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Server Features</h2>
+                <div class="underline"></div>
+                <p>What makes MetroLife RP special</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-users"></i></div>
+                    <h3>Free Gangs</h3>
+                    <p>Create or join gangs with no fees. Full gang system with turf wars and custom vehicles.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Realistic Jobs</h3>
+                    <p>Police, EMS, Mechanic, Trucker, and many more jobs with fair payouts.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-car"></i></div>
+                    <h3>VIP Cars</h3>
+                    <p>Exclusive vehicles with custom liveries and special handling for VIP players.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-home"></i></div>
+                    <h3>Housing System</h3>
+                    <p>Buy, decorate, and own houses across the map. Full interior system.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-code"></i></div>
+                    <h3>Custom Scripts</h3>
+                    <p>Unique scripts built for MetroLife. Drug system, black market, heists.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                    <h3>24/7 Support</h3>
+                    <p>Active staff team always ready to help and ensure fair gameplay.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Staff Section (Owner + Admins) -->
+    <section id="staff" class="staff">
+        <div class="container">
+            <div class="section-title">
+                <h2>Staff Team</h2>
+                <div class="underline"></div>
+                <p>Meet the team running MetroLife RP</p>
+            </div>
+            
+            <!-- Owner -->
+            <div class="owner-card">
+                <div class="owner-avatar">
+                    <img src="https://r2.fivemanage.com/LTzCowpSGsQqAkmQrMwLF/standard(3).gif" alt="Sahil">
+                </div>
+                <div class="owner-info">
+                    <h3>Sahil</h3>
+                    <span class="owner-badge">Owner & Developer</span>
+                    <p>The mastermind behind MetroLife RP. Handles development, scripts, and server vision.</p>
+                </div>
+            </div>
+
+            <!-- Admins -->
+            <div class="admins-grid">
+                <div class="admin-card">
+                    <div class="admin-avatar">
+                        <img src="https://r2.fivemanage.com/LTzCowpSGsQqAkmQrMwLF/standard(4).gif" alt="MUSTAFA">
+                    </div>
+                    <h4>MUSTAFA</h4>
+                    <span class="admin-badge">Admin</span>
+                    <p>Experienced admin ensuring fair play and handling community concerns.</p>
+                </div>
+                <div class="admin-card">
+                    <div class="admin-avatar">
+                        <img src="https://r2.fivemanage.com/LTzCowpSGsQqAkmQrMwLF/standard(4).gif" alt="MILAD">
+                    </div>
+                    <h4>MILAD</h4>
+                    <span class="admin-badge">Admin</span>
+                    <p>Player support and in-game event coordination.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Members Section -->
+    <section id="members" class="members">
+        <div class="container">
+            <div class="section-title">
+                <h2>Community Members</h2>
+                <div class="underline"></div>
+                <p>Our valued members of MetroLife RP</p>
+            </div>
+            <div class="members-grid">
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <img src="https://r2.fivemanage.com/LTzCowpSGsQqAkmQrMwLF/standard_1.gif" alt="OSMAN">
+                    </div>
+                    <h4>OSMAN</h4>
+                    <span class="member-badge">Member</span>
+                    <p>Active community member and loyal player.</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <img src="https://r2.fivemanage.com/LTzCowpSGsQqAkmQrMwLF/standard_1.gif" alt="OSM4N">
+                    </div>
+                    <h4>OSM4N</h4>
+                    <span class="member-badge">Member</span>
+                    <p>Dedicated player helping new members.</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <img src="https://r2.fivemanage.com/LTzCowpSGsQqAkmQrMwLF/standard_1.gif" alt="ICE">
+                    </div>
+                    <h4>ICE</h4>
+                    <span class="member-badge">Member</span>
+                    <p>Active in community events and roleplay.</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <img src="https://r2.fivemanage.com/LTzCowpSGsQqAkmQrMwLF/standard_1.gif" alt="KHALIL">
+                    </div>
+                    <h4>KHALIL</h4>
+                    <span class="member-badge">Member</span>
+                    <p>Supportive community member.</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <img src="https://r2.fivemanage.com/LTzCowpSGsQqAkmQrMwLF/standard_1.gif" alt="MUDASER">
+                    </div>
+                    <h4>MUDASER</h4>
+                    <span class="member-badge">Member</span>
+                    <p>Active participant in server activities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connect Section -->
+    <section id="connect" class="connect">
+        <div class="container">
+            <div class="connect-content">
+                <div class="connect-text">
+                    <h2>Join the City</h2>
+                    <p>Ready to start your story in MetroLife RP? Connect now and become part of our growing community.</p>
+                    <div class="connect-buttons">
+                        <a href="https://discord.gg/zzBnbJQ3" target="_blank" class="btn btn-discord"><i class="fab fa-discord"></i> Discord Community</a>
+                        <a href="https://cfx.re/join/ok3dvx" target="_blank" class="btn btn-cfx"><i class="fas fa-gamepad"></i> Connect via CFX</a>
+                    </div>
+                    <div class="server-ip">
+                        <span>Direct Connect:</span>
+                        <code>cfx.re/join/ok3dvx</code>
+                        <button class="copy-btn" onclick="copyToClipboard('cfx.re/join/ok3dvx')">Copy</button>
+                    </div>
+                </div>
+                <div class="connect-stats">
+                    <div class="stat">
+                        <i class="fas fa-users"></i>
+                        <h3 id="playerCount">128/128</h3>
+                        <p>Players Online</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-clock"></i>
+                        <h3>24/7</h3>
+                        <p>Uptime</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-trophy"></i>
+                        <h3>50+</h3>
+                        <p>Custom Scripts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="https://r2.fivemanage.com/LTzCowpSGsQqAkmQrMwLF/Mar22202601_53_49AM.png" alt="MetroLive">
+                    <h3>METROLIVE RP</h3>
+                    <p>Experience the best FiveM roleplay server.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#staff">Staff</a></li>
+                        <li><a href="#members">Members</a></li>
+                        <li><a href="#connect">Connect</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://discord.gg/zzBnbJQ3" target="_blank">Discord</a></li>
+                        <li><a href="https://cfx.re/join/ok3dvx" target="_blank">FiveM Server</a></li>
+                    </ul>
+                </div>
+                <div class="footer-status">
+                    <h4>Server Status</h4>
+                    <div class="status-badge">
+                        <i class="fas fa-circle"></i>
+                        <span>Online • 24/7</span>
+                    </div>
+                    <p id="footerPlayerCount">128+ Active Players</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 METROLIVE RP. Created by Sahil & Team. Not affiliated with Rockstar Games.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
